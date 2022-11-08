@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+  Maia Han
+  CSE 154 AC
+  HTML for my Game of Thrones game
+  -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Game of GOT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+      >
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>WHO ARE THEY</h1>
+    </header>
+    <main>
+      <section id="menu-view">
+        <article>
+          <h2>Choose a Timing Option:</h2>
+          <select>
+            <option value="60">1 Minute</option>
+            <option value="180" selected>3 Minutes</option>
+            <option value="300">5 Minutes</option>
+          </select>
+          <button id="start-btn">Start</button>
+        </article>
+        <section>
+          <header>
+            <h2>Introduction</h2>
+          </header>
+          <p>
+            How much are you familiar with GOT characters? Pick a timer for your
+            challenge, you can get 3 hints before ran out of time. You can
+            always get a new character if you can't figure out, try to guess as
+            many as you can!
+          </p>
+          <p>
+            API used for this website is from &nbsp;
+            <a href="https://www.anapioficeandfire.com/api"
+              >https://www.anapioficeandfire.com/api.</a
+              >
+            </p>
+          <p>Have fun!</p>
+        </section>
+      </section>
+      <section id="game-view" class="hidden">
+        <div id="details-bar">
+          <button id="back-btn">Back to Main</button>
+          <p><strong>Guessed right: </strong><span id="count">0</span></p>
+          <p><strong>Time: </strong><span id="time">00:00</span></p>
+          <button id="refresh-btn">Give me a new one!</button>
+        </div>
+        <div id="prompt"></div>
+        <section class="bottom">
+          <div class="hint-box">
+            <button id="hint">
+            GET A HINT &nbsp;&nbsp;&nbsp;<span id="hint-left"> 3</span>
+            </button>
+            <button id="show">FINE SHOW ME!</button>
+          </div>
+          <div class="input-box">
+            <input id="user-guess">
+            <button id="submit">SUBMIT</button>
+          </div>
+          <div id="result-box"></div>
+        </section>
+      </section>
+    </main>
+    <footer>Created by Maia Han for CSE 154 CP3.</footer>
+  </body>
+</html>

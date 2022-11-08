@@ -1,0 +1,193 @@
+/*
+Name: Maia Han
+Date: 11/1, 2022
+Section: CSE 154 AC
+This is the style.css page for the game of GOT page
+*/
+
+body {
+  background-image: url("got-background.webp");
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+body,
+#details-bar,
+.bottom,
+.hint-box,
+.input-box,
+#prompt {
+  display: flex;
+}
+
+body,
+button,
+select {
+  font-family: "Helvetica", "Verdana", sans-serif;
+  text-align: center;
+  font-size: 12pt;
+}
+
+@font-face {
+  font-family: "game_of_thronesregular";
+  src:
+    url("game_of_thrones-webfont.woff2") format("woff2"),
+    url("game_of_thrones-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  width: 80%;
+}
+
+main,
+#prompt {
+  margin: auto;
+}
+
+button,
+select {
+  padding: 8px;
+  background-color: #ffefd6;
+  border: 2pt solid black;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+h1,
+h2 {
+  font-family: "game_of_thronesregular", sans-serif;
+}
+
+p {
+  font-family: "Caveat", cursive;
+  font-size: 18pt;
+}
+
+footer {
+  bottom: 10px;
+  position: fixed;
+}
+
+button {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #4c7868;
+}
+
+button:hover {
+  border: 2pt solid #ffd899;
+}
+
+body,
+button,
+select,
+input {
+  color: #283e36;
+}
+
+input {
+  padding: 5%;
+}
+
+#menu-view > article {
+  background-color: #5f9581;
+  border-radius: 0.35em;
+  border: 5pt solid #283e36;
+}
+
+#menu-view > article,
+#details-bar,
+#result-box,
+button,
+p,
+h2 {
+  color: #ffefd6;
+}
+
+#details-bar {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  background-color: #283e36;
+  font-size: 14pt;
+  justify-content: space-evenly;
+}
+
+.selected {
+  box-shadow: #588977 6px 6px;
+}
+
+.prompt {
+  border-right: #5f9581 solid 5pt;
+  border-left: #5f9581 solid 5pt;
+  border-bottom: #5f9581 solid 5pt;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.hidden,
+.hide-imgs > img {
+  display: none;
+}
+
+.bottom,
+#promt,
+#details-bar,
+#prompt {
+  align-items: center;
+}
+
+#prompt,
+.bottom,
+#promt,
+footer {
+  justify-content: center;
+}
+
+.hint-box,
+.bottom,
+#promt,
+#prompt,
+body {
+  flex-direction: column;
+}
+
+.input-box {
+  flex-direction: row;
+}
+
+#hint {
+  margin-right: 20%;
+}
+
+#show,
+#hint,
+#user-guess,
+#submit {
+  width: 200px;
+}
+
+#prompt {
+  background-color: #5f9581be;
+  width: auto;
+  height: 100px;
+  font-size: 15pt;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+a,
+footer,
+button:hover {
+  color: #ffd899;
+}
+
+#result-box,
+input {
+  font-size: 13pt;
+}
